@@ -1,0 +1,67 @@
+mysql> create database anaraghya;
+
+Query OK, 1 row affected (0.01 sec)
+mysql> use anaraghya;
+Database changed
+
+
+http://localhost:9090/api/v1/createOrder
+
+Adding 
+postman :  body -> raw - JSON
+Post :
+
+http://localhost:9090/api/v1/createOrder
+{
+	"orderDate":"2023/04/12",
+	"dispatchDate":"2023/04/12",
+	"cost":123,
+	"totalCost":234.23,
+	"orderStatus":"completed"
+}
+        
+
+
+
+http://localhost:3000/api/v1/createOrder/1
+
+http://localhost:3000/api/v1/getCust/1
+
+http://localhost:3000/api/v1/getCust/{customerId}
+
+http://localhost:3000/api/v1/order/{orderId}
+
+http://localhost:3000/api/v1/orders
+
+http://localhost:3000/api/v1/updateOrder
+
+http://localhost:3000/api/v1/updateOrder/{orderId}
+
+http://localhost:3000/api/v1/cancelOrder/{orderId}
+
+http://localhost:3000/api/v1/{orderID}/updateStatus
+
+http://localhost:3000/api/v1/{orderID}/totalCost
+
+http://localhost:3000/api/v1/getOrderCustomerDetails
+
+
+
+
+
+
+mysql> use anraghya;
+Database changed
+mysql> show tables;
++-----------------------+
+| Tables_in_capgreactdb |
++-----------------------+
+| ORDER_DTLS            |
++-----------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from order_dtls;
+
+
+
+

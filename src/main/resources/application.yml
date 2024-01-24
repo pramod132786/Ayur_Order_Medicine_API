@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Pramodmumma@786
+    url: jdbc:mysql://localhost:3306/anaraghya_ordermodule
+    username: pramod
+  jpa:
+    hibernate:
+      ddl-auto: update #Generate the table automatically
+    show-sql: true  #whatever generated query print in console
+
+server:
+  port: 9090
